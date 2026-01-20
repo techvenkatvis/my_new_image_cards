@@ -215,6 +215,27 @@ img {
   margin-right: 5px;
   cursor: pointer;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #094e03;
+}
 
 @media (max-width: 768px) {
   .logo {
@@ -278,7 +299,7 @@ img {
   .page-no span {
     font-size: 14px;
     padding: 8px 14px;
-    max-resolution: 2px;
+    margin: 2px;
   }
   .title-bar {
     margin-bottom: 1rem;
@@ -316,6 +337,9 @@ img {
   .img-card {
     margin: 0;
   }
+  .img-cards {
+    margin-bottom: 2rem;
+  }
   .content3 {
     width: 75%;
   }
@@ -325,6 +349,23 @@ img {
   .search-box {
     top: 42%;
     left: 26%;
+  }
+  .page-no span {
+    font-size: 12px;
+    padding: 4px 6px;
+    margin: 0;
+  }
+  .page-no .page-one {
+    font-size: 10px;
+    padding: 7px 10px;
+  }
+  .btn-pre button,
+  .btn-nxt button {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+  .previous-nxt {
+    margin-bottom: 2rem;
   }
   .img-overlay p {
     font-size: 14px;
